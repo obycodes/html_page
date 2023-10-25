@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav aria-label="Main Menu" id="left-sidebar" class="left-sidebar">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="signup.html" aria-current="page">Sign Up</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Application Form</h1>
+        <h4>Fill in your details</h4>
+        <form action="#" method="post">
+            <fieldset>
+                <table>
+                <tr>
+                    <td>
+                        <label for="name">First Name</label>
+                        <input type="text" name="name" id="firstName" placeholder="Enter first name" required aria-required="true"
+                        pattern="[^.]*?" aria-describedby="firstName-length-error" aria-invalid="true">
+                    </td>
+                    <td>
+                        <label for="name">Last Name</label>
+                        <input type="text" name="name" id="lastName" placeholder="Enter last name" required aria-required="true" 
+                        pattern="[^.]*?" aria-describedby="firstName-length-error" aria-invalid="true">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender</label>
+                        <select name="gender">
+                            <option value="" disabled selected hidden>Select your gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="date">Date of Birth</label>
+                        <input type="date" name="date" required aria-required="true">
+                    </td>
+                </tr>
+            
+                    
+                <tr>
+                    <td>
+                        <label for="country">Country</label>
+                        <input type="text" required aria-required="true">
+                    </td>
+                    <td>
+                        <label for="state">State/County</label>
+                        <input type="text" required aria-required="true">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="emailAddress" autocomplete="email" placeholder="obiageli@example.com" 
+                        size="25" minlength="3" maxlength="64" required aria-required="true">
+                    </td>
+                    <td>
+                        <label for="id">Application ID</label>
+                        <input type="text" name="id" required aria-required="true">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="education">Education Level</label>
+                        <select name="education">
+                            <option value="" disabled selected hidden>Select level of education</option>
+                            <option value="">High School/Secondary School</option>
+                            <option value="">Undergraduate</option>
+                            <option value="">Diploma</option>
+                            <option value="">Bachelors</option>
+                            <option value="">Masters</option>
+                            <option value="">Doctorate (PhD)</option>
+                            <option value="">Post Graduate</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="school">Choose School</label>
+                        <select name="school">
+                            <option value="" disabled selected hidden>Select school</option>
+                            <option value="Engineering">School of Engineering</option>
+                            <option value="data">School of Data</option>
+                            <option value="data">School of Product</option>
+                        </select>
+                    </td>
+
+                    <td>
+                        <label for="about">How did you hear about us?</label>
+                        <select>
+                            <option value="" disabled selected hidden>Select channel</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="whatsapp">WhatsApp</option>
+                            <option value="twitter">Twitter</option>
+                            <option value="tiktok">Tiktok</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="google search">Google</option>
+                            <option value="linkedin">Linkedin</option>
+                            <option value="friend">Word of Mouth</option>
+                            <option value="bill">Bill Board</option>
+                            <option value="youtube">Youtube</option>
+                        </select>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td><p>By clicking continue, I agree to <a href="#">Terms of Use</a> and acknowledge that I have read the <a href="#">Privacy Policy</a>.</p></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button>Proceed</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Already have an account? <a href="#">Sign in</a></button>
+                    </td>
+                </tr>
+                </table>
+            </fieldset>
+        </form>
+    </main> 
+</body>
+</html>
